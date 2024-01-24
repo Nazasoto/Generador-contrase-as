@@ -1,38 +1,143 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Estilos Globales */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f6f8fa;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+/* Estilos del título */
+h2 {
+  color: #0366d6;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h3{
+  color:#003366;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+label{
+  color: #073d7a;
+  font: 300;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Input */
+input {
+  color: #000000;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid rgba(128, 128, 128, 0.384);
+  border-radius: 4px;
+}
+
+/* Estilos del párrafo que muestra la contraseña */
+p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  margin: 10px 0;
+  border: 1px solid #e1e4e8;
+  padding: 8px;
+  border-radius: 4px;
+  color: #0366d6;
+}
+
+/* Estilos del botón */
+button {
+  background-color: #0366d6;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #003366;
+}
+
+/* Estilos con Id */
+
+#temaOscuroBoton {
+  width: 100px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+#temaOscuroBoton.temaOscuro {
+  background: #555;
+  color: #ffffff;
+}
+
+#temaOscuroBoton.temaClaro {
+  background: #ddd;
+  color: #333;
+}
+
+/* Estilos con clases */
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.24);
+}
+
+.personalizacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 20px;
+}
+
+.opciones {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.opcion {
+  margin-bottom: 10px;
+}
+
+.opcionRadio,
+.opcionCheckbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.separador {
+  width: 2px;
+  background-color: #ccc;
+}
+
+.contraseña-generada {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.etiquetaP {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+.etiquetaP span {
+  margin-left: 10px;
+  cursor: pointer;
+  color: #007bff;
 }
